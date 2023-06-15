@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body {
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px #c9c3c3;
+    padding: 25px;
+}
+img {
+    height: 300px;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 250px;
+    margin: 40px;
+}
+.form > p {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.form div:not(.gender) input {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    padding: 6px;
+    margin: 7px 10px;
+}
+.form .gender {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 15px;;
+}
+.form .gender p {
+    font-size: 15px;
+    font-weight: 400;
+}
+.form input[type="radio"] {
+    margin: 0 10px;
+}
+.signUp {
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+}
+.signUp button {
+    background-color: darkorchid;
+    border: none;
+    width: 100px;
+    height: 30px;
+    color: #fff;
+}
+.member {
+    color: darkorchid;
+    text-decoration: underline;
+}
