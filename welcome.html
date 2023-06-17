@@ -15,12 +15,12 @@
 
 
     <script>
-        // Retrieve the username from the query parameter
+        // Retrieve the full name from the query parameter
         const urlParams = new URLSearchParams(window.location.search);
-        const username = urlParams.get('username');
+        const fullName = decodeURIComponent(urlParams.get('fullName'));
 
-        // Use the username as needed, such as displaying a welcome message
-        document.getElementById('welcomeMessage').textContent = `Welcome, ${username}!`;
+        // Use the full name as needed, such as displaying a welcome message
+        document.getElementById('welcomeMessage').textContent = `Welcome, ${fullName}!`;
 
     </script>
 

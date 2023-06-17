@@ -22,7 +22,7 @@ if (storedUserData) {
       // Successful sign-in
     alert('Sign in successful!');
       // Perform any further actions (e.g., redirect to a new page)
-      window.location.href = `welcome.html?username=${userName}`;
+      window.location.href = `welcome.html?fullName=${encodeURIComponent(userData.fullName)}`;
     } else {
       // Invalid credentials
     alert('Invalid username or password. Please try again.');
