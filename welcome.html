@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signUp.css">
+    <title>welcome page</title>
+</head>
+
+<body>
+    <div class="container" style="height: 300px; width: 600px;">
+        <div id="welcomeMessage"></div>
+    </div>
+
+
+    <script>
+        // Retrieve the username from the query parameter
+        const urlParams = new URLSearchParams(window.location.search);
+        const username = urlParams.get('username');
+
+        // Use the username as needed, such as displaying a welcome message
+        document.getElementById('welcomeMessage').textContent = `Welcome, ${username}!`;
+
+    </script>
+
+    <script src="loginScript.js"></script>
+
+</body>
+
+</html>
