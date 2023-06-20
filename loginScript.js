@@ -21,7 +21,7 @@ if (storedUserData) {
     if (userName === userData.userName && password === userData.password) {
       // Successful sign-in
     alert('Sign in successful!');
-      // Perform any further actions (e.g., redirect to a new page)
+      // Perform any further action redirect to welcome page
       window.location.href = `welcome.html?fullName=${encodeURIComponent(userData.fullName)}`;
     } else {
       // Invalid credentials
